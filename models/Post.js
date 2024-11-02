@@ -7,7 +7,6 @@ Post.init(
   {
     id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
@@ -29,7 +28,6 @@ Post.init(
   },
   {
     sequelize,
-    timestamps: true,
     freezeTableName: true,
     underscored: true,
     modelName: 'post',
