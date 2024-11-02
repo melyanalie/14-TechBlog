@@ -8,7 +8,7 @@ const sequelize = require('./config/connection');
 const routes = require('./controllers');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3306;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

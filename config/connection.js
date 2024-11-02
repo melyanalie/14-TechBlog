@@ -2,9 +2,9 @@ const Sequelize = require('sequelize');
 require('dotenv').config();
 
 const sequelize = new Sequelize('database', 'username', 'password', {
-  host: '127.0.0.1',
+  host: 'localhost',
   dialect: 'mysql',
-  port: 3000,
+  port: 3306,
   dialectOptions: {
     connectTimeout: 60000
   }
